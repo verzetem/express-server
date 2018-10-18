@@ -4,7 +4,7 @@ const port = 3000
 const cors = require('cors')
 const bodyParser = require('body-parser')
 
-app.user(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.use(cors())
